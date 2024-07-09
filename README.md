@@ -13,16 +13,33 @@ Deploy Mosquitto message broker with ConfigMap and Secret Volume Types
 
 
 <h2>Detailed Description of Project </h2>
-Define configuration and password for mosquitto message broker with configMap and Secret Voulume types
+Define configuration and password for mosquitto message broker with configMap and Secret Voulume types<br/>
 
-<p align="center">
-Create mosquitto deployment/pod without attaching volume with configuration file: <br/>
-Mosquitto message broker image is pulled from docker hub.
-configuration file name "mosquitto-deployment.yaml"
-<img src='./src/kimage1.png' height="80%" width="80%" alt="Disk Sanitization Steps">
+   <p align="">
+   <h2>step1</h2>
+   Create mosquitto deployment/pod without attaching volume with configuration file: <br/>
+   Mosquitto message broker image is pulled from docker hub.<br/>
+   configuration file name "mosquitto-deployment.yaml" <br/>
+   <img src='./sp/kimage1.png' height="80%" width="80%" alt="Disk Sanitization Steps">
 
-mosquitto message broker deployment created in minikube
-<img src='./src/kimage2.png' height="80%" width="80%" alt="Disk Sanitization Steps">
+   mosquitto message broker deployment created in minikube 
+   <img src='./sp/kimage2.png' height="80%" width="80%" alt="Disk Sanitization Steps">
+
+   <h2>step2</h2>
+   Create configMap and Secret volume types
+   <img src='./sp/kimage5.png' height="80%" width="80%" alt="Disk Sanitization Steps">
+
+     ConfigMap and secret volumes created in minikube
+   <img src='./sp/kimage6.png' height="80%" width="80%" alt="Disk Sanitization Steps">
+
+    <h2>step3</h2>
+    Add created configMap and secret volume to mosquitto pod configuration file
+
+    create the volumes in the configuration file and mount the volume to the container
+    
+    
+   
+   
 
 
 <br />
