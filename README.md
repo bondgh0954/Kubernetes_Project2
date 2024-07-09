@@ -27,7 +27,7 @@ Define configuration and password for mosquitto message broker with configMap an
 
    <h2>step2</h2>
    Create configMap and Secret volume types
-   <img src='./sp/kimage5.png' height="80%" width="80%" alt="Disk Sanitization Steps">
+   <img src='./sp/kimage7.png' height="80%" width="80%" alt="Disk Sanitization Steps">
 
      ConfigMap and secret volumes created in minikube
    <img src='./sp/kimage6.png' height="80%" width="80%" alt="Disk Sanitization Steps">
