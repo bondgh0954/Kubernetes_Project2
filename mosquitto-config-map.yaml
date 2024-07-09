@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: mosquitto-config-map
 data:
-  config.conf: |
+  mosquitto.conf: |
     log_dest stdout
     log_type all
     log_timestamp true
@@ -15,7 +15,7 @@ metadata:
   name: mosquitto-secret-files
 type: Opaque
 data:
-  secret.files: |
+  secret.file: |
     bXlwYXNzd29yZA==
 
   
